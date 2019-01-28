@@ -1,0 +1,286 @@
+html,body,#wrapper,.game {
+	margin:0;
+	padding:0;
+	width:100%;
+	max-width:480px;
+	height:100%;
+	color:#FFF;
+	font-size:12px;
+	line-height:14px;
+	font-weight:300;
+	font-family:'Roboto Condensed',Arial,Helvetica,sans-serif;
+}
+h1,h2,h3,h4 {
+	clear:both;
+	margin:0;
+	padding:0;
+	width:100%;
+	font-weight:700;
+}
+a {
+	color:#06C;
+	text-decoration:none;
+	cursor:pointer;
+	cursor:hand;
+}
+	a:hover {
+		color:#3CF;
+	}
+a img, a:active, a:active img {
+	boder:none;
+}
+
+.hidden{display:none;}
+.clrl{
+	float:none;
+	clear:left;
+	height:0;
+}
+.clrr{
+	float:none;
+	clear:right;
+	height:0;
+}
+
+#setup, #choose-game {
+	padding:0 4%;
+	width:92%;
+	max-width:320px;
+	font-size:14px;
+	line-height:21px;
+	color:#232323;
+}
+	.setup-screen h1 {
+		font-size:24px;
+		line-height:30px;
+	}
+	.setup-screen h2 {
+		font-size:16px;
+		line-height:20px;
+	}
+	.setup-screen a {
+		display:block;
+	}
+	#playing,#bench {
+		padding:4% 6%;
+		width:88%;
+		min-height:24px;
+		border:1px solid #232323;
+	}
+	#setup #finish-choosing-players {
+		float:right;
+		font-size:16px;
+		line-height:24px;
+		font-weight:700;
+		margin-bottom:20px;
+	}
+	#setup #setup-errors {
+		margin-bottom:20px;
+	}
+	#setup #setup-add-player {
+		float:right;
+	}
+	#setup #manage {
+		float:right;
+	}
+
+	#choose-game h2 {
+		margin-bottom:6px;
+	}
+	.game-group {
+		padding-bottom:18px;
+	}
+
+
+/* CRICKET */
+.topper.topper-cricket {
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto -267px;
+}
+.footer.footer-cricket, .spacer.spacer-cricket{
+	clear:left;
+	height:267px;
+}
+.game {
+	display:none;
+	width:100%;
+	background-color:#006
+}
+	.game.game-active {
+		display:block;
+	}
+	.game .ft-menu {
+		position:relative;
+		padding:0 0 0 2%;
+		width:98%;
+		height:40px;
+		font-size:18px;
+		line-height:40px;
+		background-color:#222222;
+	}
+		.game .ft-menu-button {
+			display:block;
+			float:right;
+			width:40px;
+			height:40px;
+			text-align:center;
+			color:#FFF;
+			background-color:#666666;
+		}
+		.game .ft-menu-dd {
+			display:none;
+			position:absolute;
+			right:0;
+			top:40px;
+			z-index:1000;
+		}
+			.game .ft-menu-dd .ft-menu-dd-item {
+				display:block;
+				padding:14px 32px;
+				margin:1px 0;
+				font-size:18px;
+				line-height:24px;
+				color:#FFF;
+				background-color:rgba(0,0,0,0.85);
+			}
+				.game .ft-menu-dd .ft-menu-dd-item:hover {
+					background-color:#CCC;
+					color:#222222;
+				}
+	.game .ft-scoring {
+		border-bottom:1px solid #00E;
+	}
+	.game .ft-row {
+		clear:left;
+		width:100%;
+		border-top:1px solid #00E;
+	}
+		.cell {
+			float:left;
+			padding:3% 0;
+			width:9%;
+			min-height:14px;
+			text-align:center;
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-color:#00C;
+		}
+			.cell.cell-odd {
+				background-color:#00D;
+			}
+			.cell.cell-left {
+				padding:3% 2%;
+				clear:left;
+				width:22%;
+				text-align:left;
+			}
+			.cell.cell-right {
+				width:11%;
+			}
+			.cell.header-cell {
+				padding:2% 0;
+				font-weight:700;
+				background-color:#222222;
+			}
+				.cell.header-cell.cell-left {
+					padding:2%;
+					font-weight:300;
+				}
+			.cell.marks-1 {
+				background-image:url(images/mark-1.png);
+			}
+			.cell.marks-2 {
+				background-image:url(images/mark-2.png);
+			}
+			.cell.marks-3 {
+				background-image:url(images/mark-3.png);
+			}
+			.cell.cell-left.cell-name {
+				background-color:#FCFCFC;
+				font-weight:700;
+				color:#454545;
+				white-space:nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+				.ft-player-active .cell.cell-left.cell-name {
+					background:url(images/arrow.png) right center no-repeat #DDEFDD;
+				}
+	.hud-name {
+		font-size:10px;
+	}
+	.cricket-hud, .hud-name {
+		padding:0 4%;
+		width:92%;
+	}
+	.plus_minus {
+		float:left;
+		box-sizing:border-box;
+		padding:14px 32px;
+		min-height:18px;
+		font-size:16px;
+		line-height:18px;
+		font-weight:700;
+		text-align:center;
+		border:1px solid #FFF;
+		background-color:transparent;
+	}
+		.plus_minus.leading {
+			background-color:#090;
+		}
+	.wins {
+		float:left;
+		padding:16px 32px;
+		height:14px;
+		font-size:14px;
+		font-weight:700;
+		text-align:left;
+	}
+	.stat-bar {
+		clear:both;
+		padding:5px;
+		width:92%;
+		padding:5px 4%;
+		font-size:9px;
+		line-height:14px;
+	}
+		.stat-bar > div {
+			float:left;
+			width:23%;
+			text-align:center;
+		}
+	.marker-cell {
+		float:left;
+		padding:14px 0;
+		width:33.333333%;
+		box-sizing:border-box;
+		font-size:14px;
+		line-height:16px;
+		text-align:center;
+		color:#FFF;
+		background-color:#666;
+		border-right:1px solid #000;
+		border-bottom:1px solid #000;
+	}
+		.marker-cell:hover {
+			color:#666;
+			background-color:#CCC;
+		}
+		.marker-cell.disabled, .marker-cell.diabled:hover {
+			color:#FFF;
+			background-color:#CCC;
+		}
+		.marker-cell.can-score {
+			background-color:#607060;
+		}
+		.marker-cell.marker-cell-right {
+			border-right:0;
+		}
+		.marker-cell.marker-cell-2by {
+			width:50%;
+		}
+		.marker-row-enter .marker-cell {
+			padding:15px 0;
+		}
